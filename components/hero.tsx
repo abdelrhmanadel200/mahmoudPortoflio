@@ -33,17 +33,18 @@ export function Hero() {
         </p>
       </div>
 
-      <div className="flex flex-wrap items-center gap-4 mt-6 pt-6 border-t border-slate-600/30">
+      <div className="flex flex-wrap items-center gap-3 sm:gap-4 mt-6 pt-6 border-t border-slate-600/30">
         <div className="flex items-center gap-1.5 text-xs text-slate-400">
-          <MapPin className="w-3.5 h-3.5 text-teal-400" />
+          <MapPin className="w-3.5 h-3.5 text-teal-400 flex-shrink-0" />
           <span>Giza, Egypt</span>
         </div>
         <a
           href="mailto:mahmoudelnahass776@gmail.com"
           className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-emerald-400 transition-colors"
         >
-          <Mail className="w-3.5 h-3.5 text-emerald-400" />
-          <span>mahmoudelnahass776@gmail.com</span>
+          <Mail className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
+          <span className="hidden sm:inline">mahmoudelnahass776@gmail.com</span>
+          <span className="sm:hidden">Email</span>
         </a>
         <a
           href="http://www.linkedin.com/in/mahmoud-amr21"
@@ -51,7 +52,7 @@ export function Hero() {
           rel="noopener noreferrer"
           className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-emerald-400 transition-colors"
         >
-          <Linkedin className="w-3.5 h-3.5 text-emerald-400" />
+          <Linkedin className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
           <span>LinkedIn</span>
         </a>
       </div>

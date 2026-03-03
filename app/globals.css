@@ -246,3 +246,12 @@ html {
   background: rgba(30, 41, 59, 0.7);
   border-color: rgba(20, 184, 166, 0.3);
 }
+
+/* Hide scrollbar but keep scrollable */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
